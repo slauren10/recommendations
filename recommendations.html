@@ -13,7 +13,6 @@
      html { 
   background: url(http://68.media.tumblr.com/6f83f5752d1e496099f0f6a41e9423cb/tumblr_npuvrbtn0v1qcugtho1_540.gif) no-repeat center center fixed; 
   background-size: cover;
-
 }
        #map {
         height: 400px;
@@ -40,6 +39,48 @@ li a {
 li a:hover {
     background-color: #333;
 }
+.dropbtn {
+font-family: 'Chewy', cursive;
+        font-size: 38px;
+        color: white;
+        text-shadow: 1px 1px black;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    filter: alpha(opacity=30);
+    background-opacity: 0.3;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Chewy', cursive;
+    font-size: 38px;
+    color: white;
+   text-shadow: 1px 1px black;
+}
+
+.dropdown-content a:hover {background-color: black}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: black;
+}
 </style>
 </head>
 <body>
@@ -51,7 +92,14 @@ li a:hover {
   <li><a href="#photogallery">Photo Gallery</a></li>
   <li><p><b><a href="https://slauren10.github.io/portfolio-biography/Portfoliobiography.html#biography" target="_blank">Biography</a></b></p></li>
   <li><a href="#maps">Maps</a></li>
-  <li><a href="#recommendations">Recommendations</a></li>
+  <div class="dropdown">
+  <button class="dropbtn">Recommendations</button>
+  <div class="dropdown-content">
+    <a href="#food">Food</a>
+    <a href="#funthingstodo">Fun Things to do</a>
+    <a href="#secretspots">Secret Spots</a>
+  </div>
+</div>
 </ul>
 <h1>Recommendations</h1>
    <p1>Here are some of my favorite places throughout San Francisco that I highly recommend you go see:)!!!</p1>
