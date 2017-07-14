@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+</head>
+<style>
+      body {
+        font-family: 'Chewy', cursive;
+        font-size: 48px;
+        color: white;
+        text-shadow: 1px 1px black;
+        background-image: url(http://31.media.tumblr.com/a10daeb8cb58887ef47606985a8f965b/tumblr_mmlikdUcg91sp9fcho1_500.gif);
+      }
+       #map {
+        height: 400px;
+        width: 100%;
+      }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    filter: alpha(opacity=30);
+    background-opacity: 0.3;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #333;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><p><b><a class="active" href="https://slauren10.github.io/Portfolio/portfolio.html" target="_blank">Home</a></b></p></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#links">Links</a></li>
+  <li><a href="#photogallery">Photo Gallery</a></li>
+  <li><p><b><a href="https://slauren10.github.io/portfolio-biography/Portfoliobiography.html#biography" target="_blank">Biography</a></b></p></li>
+  <li><a href="#maps">Maps</a></li>
+  <li><a href="#recommendations">Recommendations</a></li>
+</ul>
+<h1>Recommendations</h1>
+   <p1>Here are some of my favorite places throughout San Francisco that I highly recommend you go see:)!!!</p1>
+<h2>Quick Breakfast Places</h3>
+<p2>All throughout San Francisco there are super cool cute little coffee shops that I visit regularly here are some of them:
+  Java Beach:....</p2>
+    <div id="map"></div>
+     <script>
+      function initMap() {
+        var uluru = {lat: 37.774929, lng: -122.419416};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEUzV0wjjQzJD_a_udZoeMJ8wxQLUqwfw&callback=initMap">
+    </script>
+</body>
+</html>
